@@ -1,0 +1,121 @@
+/* goole gont */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c6bebe;
+}
+
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(red, green, blue, 0.1);
+    position: relative;
+}
+.profile-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30.5%;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+    background-color: rgb(44, 139, 202);
+}
+.image {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: #4070f4;
+    margin-bottom: 10px;
+}
+
+.image .profile-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.profile-card .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-data .name{
+    font-size: 22px;
+    font-weight: 500;
+}
+.text-data .job{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.profile-card .media-button{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+
+}
+.media-button .link:hover{
+    font-size: 25px;
+    height: 40px;
+    width: 40px;
+}
+.media-button .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin: 0 8px;
+    text-decoration: none;
+    background-color: #4070f4;
+    transition: all 0.3s ease;
+}
+.profile-card .buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.buttons .button{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 480;
+    border: none;
+    border-radius: 24px;
+    margin: 0 10px;
+    padding: 8px 24px;
+    background-color: #4070f4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buttons .button:hover{
+    background-color:black;
+    font-size: 18px;
+    color: coral;
+
+}
